@@ -1,0 +1,91 @@
+.centered-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #F24957;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.sunroof-logo {
+    height: 250px;
+    width: 300px;
+}
+
+.title-text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 2em; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold if desired */
+            color: #333;
+}
+
+.contributors {
+    font-family: 'Verdana', sans-serif;
+    font-size: 10; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold if desired */
+            color: #333;
+}
+
+.goals-text {
+    font-family: 'Verdana', sans-serif;
+    font-size: 8; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold if desired */
+            color: #333;
+}
+.background {
+    background-color: #EDEAE0;
+}
+.content{
+    font-family: 'Verdana', sans-serif;
+    font-size: 6; /* Adjust the font size as needed */
+            font-weight: bold; /* Make the text bold if desired */
+            color: #333;
+}

@@ -1,15 +1,82 @@
-.deliverables-table {
-    border-collapse: collapse; /* Collapse borders between table cells */
+.center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+}
+
+.title {
+    font-family: 'Verdana', sans-serif;
+}
+
+.background {
+    background-color: #EDEAE0;
+}
+
+.table-background {
+    background-color: white;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #F24957;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+
+#deliverables {
+    font-family: 'Verdana', sans-serif;
+    border-collapse: collapse;
     width: 100%;
-    margin-top: 20px; /* Add some margin for better spacing */
-}
-
-.deliverables-table th, .deliverables-table td {
-    border: 1px solid #ddd; /* Add a 1px solid border with a light gray color to table cells */
-    padding: 8px; /* Add padding to table cells for better spacing */
+  }
+  
+  #deliverables td, #deliverables th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #deliverables tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #deliverables tr:hover {background-color: #ddd;}
+  
+  #deliverables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
     text-align: left;
-}
-
-.deliverables-table th {
-    background-color: #f2f2f2; /* Add a light gray background color to table header cells */
-}
+    background-color: #F24957;
+    color: white;
+  }

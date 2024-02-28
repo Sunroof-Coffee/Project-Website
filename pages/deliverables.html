@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Deliverables</title>
-    <link rel="stylesheet" href="deliverables.css"> <!-- Link to your CSS file for styling -->
+    <link rel="stylesheet" href="deliverables.css"> 
 </head>
-<body>
-    <h1>Project Deliverables</h1>
+<body class="background">
+    <div class="center">
+    <h1 class="title">Project Deliverables</h1>
+</div>
 
-    <!-- Add a button to navigate to the main page -->
-    <button onclick="goToMainPage()">Go to Main Page</button>
+    <div class="center">
+    <button class = "button" onclick="goToMainPage()"><span>Home</span></button>
+</div>
+<hr style="width:50%">
 
     <!-- Table for Deliverables -->
-    <table class="deliverables-table">
+    <div class="table-background">
+    <table id="deliverables">
         <thead>
             <tr>
                 <th>Description</th>
@@ -32,6 +37,7 @@
             <!-- Add more rows as needed -->
         </tbody>
     </table>
+</div>
 
     <script>
         // JavaScript function to navigate to the main page

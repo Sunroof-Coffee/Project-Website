@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS 495: Sunroof Coffee Project</title>
+    <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <h1>CS 495: Sunroof Coffee Project</h1>
-    <p>Contributors: Andrey Ashmore, Caleb Messerly, Zachary Michaels, Patrick Swiger, Jonathan Williams</p>
-    <button onclick="goToDeliverablesPage()">Go to Deliverables Page</button>
-    <button onclick="goToBioPage()">Go to Bio Page</button>
+<body class="background">
+    <div class="centered-title">
+        <h1 class="title-text">CS 495: Sunroof Coffee Project</h1>
+    </div>
+    <div class="centered-title">
+        <img src="../photos/sunroofLogo_PinkCropped.png" class="sunroof-logo">
+    </div>
+    <div class="centered-title">
+        <p class="contributors">Contributors: Andrey Ashmore, Caleb Messerly, Zachary Michaels, Patrick Swiger, Jonathan Williams</p>
+    </div>
+    <div class="button-div">
+    <button class="button" onclick="goToDeliverablesPage()"><span>Deliverables</span></button>
+    <button class="button" onclick="goToBioPage()"><span>Bio</span></button>
+</div>
+<hr style="width:50%">
 
     <script>
         function goToDeliverablesPage() {
@@ -22,9 +33,13 @@
             window.location.href = "bio.html";
         }
     </script>
+    <div class="centered-title">
+        <h2 class="goals-text">Project Goals</h2>
+    </div>
+    <hr style="width:50%">
+<div class="centered-title">
 
-    <h2>Project Goals</h2>
-    <ul>
+    <ul class="content">
         <li>
             Home page
             <ul>
@@ -77,5 +92,6 @@
             </ul>
         </li>
     </ul>
+</div>
 </body>
 </html>
